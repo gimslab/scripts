@@ -3,25 +3,25 @@ unmapAllExcept(['f','i','I','E','R','S','D','G','gg','v','q','ya','yy'], /^https
 unmap('e',/^https?:\/\/wiki.gimslab.com/i);
 unmap('e',/^https?:\/\/h.gimslab.com/i);
 
-var wikiCpNet=/^https?:\/\/wiki.co...ng.net/i
+var wikiCpNet=/^https?:\/\/wiki.co...ng.net/i;
 unmap('?',wikiCpNet);
 unmap('[',wikiCpNet);
 unmap('e',wikiCpNet);
 
-var btsCpNet=/^https?:\/\/bts.co...ng.net/i
+var btsCpNet=/^https?:\/\/bts.co...ng.net/i;
 unmap('?',btsCpNet);
 unmap('.',btsCpNet);
 unmap('e',btsCpNet);
 unmap('g',btsCpNet);
 unmap('l',btsCpNet);
 
-var youtubeCom=/^https?:\/\/youtube.com/i
+var youtubeCom=/^https?:\/\/youtube.com/i;
 unmap('?',youtubeCom);
 unmap('<',youtubeCom);
 unmap('>',youtubeCom);
 unmap('i',youtubeCom);
 
-var githubCom=/^https?:\/\/github.com/i
+var githubCom=/^https?:\/\/github.com/i;
 unmap('?',githubCom);
 
 unmapAllExcept(['f','i','O','su','yt'], /^https?:\/\/outlook.office.com/i);
@@ -38,8 +38,8 @@ mapkey('<Ctrl-y>', 'Show me the money', function() {
     Front.showPopup('HI~');
 });
 
-var arr=[117,112,97]
-var cp="";for(i in arr) cp += String.fromCharCode(arr[i]);
+var arr=[117,112,97];
+var cp="";for(var i in arr) cp += String.fromCharCode(arr[i]);
 
 mapkey('sj', 'open jira(BTS) in a new tab', function(){
     Front.showEditor('', function(data) {
