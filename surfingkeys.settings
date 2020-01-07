@@ -9,7 +9,7 @@ unmap('[',wikiCpNet);
 unmap('e',wikiCpNet);
 
 var btsCpNet=/^https?:\/\/bts.co...ng.net/i;
-unmapAllExcept(['f','i','I','E','R','S','D','gg','v','q','ya','yy'], btsCpNet);
+unmapAllExcept(['f','i','I','E','R','S','D','v','q','ya','yy'], btsCpNet);
 //unmap('?',btsCpNet);
 //unmap('.',btsCpNet);
 //unmap('e',btsCpNet);
