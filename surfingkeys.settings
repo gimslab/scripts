@@ -15,6 +15,7 @@ unmap('?',btsCpNet);
 unmap('.',btsCpNet);
 unmap('e',btsCpNet);
 unmap('g',btsCpNet);
+unmap('ga',btsCpNet);
 unmap('l',btsCpNet);
 
 var youtubeCom=/^https?:\/\/youtube.com/i;
