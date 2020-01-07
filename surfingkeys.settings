@@ -8,8 +8,8 @@ unmap('?',wikiCpNet);
 unmap('[',wikiCpNet);
 unmap('e',wikiCpNet);
 
-unmapAllExcept(['f','i','I','E','R','S','D','G','gg','v','q','ya','yy'], /^https?:\/\/calendar.google.com/i);
-//var btsCpNet=/^https?:\/\/bts.co...ng.net/i;
+var btsCpNet=/^https?:\/\/bts.co...ng.net/i;
+unmapAllExcept(['f','i','I','E','R','S','D','G','gg','v','q','ya','yy'], btsCpNet);
 //unmap('?',btsCpNet);
 //unmap('.',btsCpNet);
 //unmap('e',btsCpNet);
