@@ -1,8 +1,6 @@
 settings.blacklistPattern=/^https?:\/\/(mail.google.com|docs.google.com|www.lucidchart.com|co...ng.*\.sharepoint\.com)/i;
 unmapAllExcept(['f','i','I','E','R','S','D','G','gg','v','q','ya','yy'], /^https?:\/\/calendar.google.com/i);
 unmap('e',/^https?:\/\/wiki.gimslab.com/i);
-unmap('g',/^https?:\/\/wiki.gimslab.com/i);
-unmap('gj',/^https?:\/\/wiki.gimslab.com/i);
 unmap('e',/^https?:\/\/h.gimslab.com/i);
 
 var wikiCpNet=/^https?:\/\/wiki.co...ng.net/i;
@@ -10,13 +8,12 @@ unmap('?',wikiCpNet);
 unmap('[',wikiCpNet);
 unmap('e',wikiCpNet);
 
-var btsCpNet=/^https?:\/\/bts.co...ng.net/i;
-unmap('?',btsCpNet);
-unmap('.',btsCpNet);
-unmap('e',btsCpNet);
-unmap('g',btsCpNet);
-unmap('ga',btsCpNet);
-unmap('l',btsCpNet);
+unmapAllExcept(['f','i','I','E','R','S','D','G','gg','v','q','ya','yy'], /^https?:\/\/calendar.google.com/i);
+//var btsCpNet=/^https?:\/\/bts.co...ng.net/i;
+//unmap('?',btsCpNet);
+//unmap('.',btsCpNet);
+//unmap('e',btsCpNet);
+//unmap('l',btsCpNet);
 
 var youtubeCom=/^https?:\/\/youtube.com/i;
 unmap('?',youtubeCom);
