@@ -1,5 +1,7 @@
 settings.blacklistPattern=/^https?:\/\/(mail.google.com|docs.google.com|www.lucidchart.com|co...ng.*\.sharepoint\.com)/i;
+
 unmapAllExcept(['f','i','I','E','R','S','D','G','gg','v','q','ya','yy'], /^https?:\/\/calendar.google.com/i);
+
 unmap('e',/^https?:\/\/wiki.gimslab.com/i);
 unmap('e',/^https?:\/\/h.gimslab.com/i);
 
@@ -25,6 +27,12 @@ var githubCom=/^https?:\/\/github.com/i;
 unmap('?',githubCom);
 
 unmapAllExcept(['f','i','O','su','yt'], /^https?:\/\/outlook.office.com/i);
+
+var keepGoogleCom=/^https?:\/\/keep.google.com/i;
+unmap('?',keepGoogleCom);
+unmap('j',keepGoogleCom);
+unmap('k',keepGoogleCom);
+
 
 iunmap(":"); // disable emoji
 // Hints.characters = 'acdfghijklmnopqrsuvwx'; // default is 'asdfgqwertzxcvb'
