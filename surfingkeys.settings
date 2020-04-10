@@ -69,3 +69,12 @@ mapkey('sw', 'open wiki.cp in a new tab', function(){
     }, 'url');
 });
 
+mapkey('sr', 'open recon.cp in a new tab', function(){
+    Front.showEditor('', function(data) {
+        if(data)
+            tabOpenLink('https://finance.co'+cp+'ng.net/goods/recon?orderId='+data);
+        else
+            tabOpenLink('https://finance.co'+cp+'ng.net/goods/recon?orderId=00000');
+    }, 'url');
+});
+
