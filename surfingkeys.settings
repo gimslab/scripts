@@ -1,4 +1,4 @@
-settings.blacklistPattern=/^https?:\/\/(mail.google.com|docs.google.com|www.lucidchart.com|co...ng.*\.sharepoint\.com)/i;
+settings.blacklistPattern=/^https?:\/\/(mail.google.com|docs.google.com|www.lucidchart.com|co...ng.*\.sharepoint\.com|bts\.co...ng\.net)/i;
 
 unmapAllExcept(['f','i','I','E','R','S','D','G','gg','v','q','ya','yy'], /^https?:\/\/calendar.google.com/i);
 
@@ -10,13 +10,6 @@ unmap('?',wikiCpNet);
 unmap('[',wikiCpNet);
 unmap('e',wikiCpNet);
 unmap('l',wikiCpNet); // label
-
-var btsCpNet=/^https?:\/\/bts.co...ng.net/i;
-unmapAllExcept(['f','i','I','E','R','S','D','v','q','ya','yy','x'], btsCpNet);
-unmap('o',btsCpNet);
-//unmap('.',btsCpNet);
-//unmap('e',btsCpNet);
-//unmap('l',btsCpNet);
 
 var youtubeCom=/^https?:\/\/youtube.com/i;
 unmap('?',youtubeCom);
