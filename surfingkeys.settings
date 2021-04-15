@@ -1,4 +1,4 @@
-settings.blacklistPattern=/^https?:\/\/(mail.google.com|docs.google.com|www.lucidchart.com|co...ng.*\.sharepoint\.com|bts.co...ng.net|metric.co...ng.net)/i;
+settings.blacklistPattern=/^https?:\/\/(mail.google.com|docs.google.com|www.lucidchart.com|co...ng.*\.sharepoint\.com|bts.co...ng.net|metric.co...ng.net|app\.smartsheet\.com)/i;
 
 unmapAllExcept(['f','i','I','E','R','S','D','G','gg','v','q','ya','yy'], /^https?:\/\/calendar.google.com/i);
 
