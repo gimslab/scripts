@@ -46,7 +46,7 @@ var cp="";for(var i in arr) cp += String.fromCharCode(arr[i]);
 mapkey('sj', 'open jira(BTS) in a new tab', function(){
     Front.showEditor('', function(data) {
         if(data)
-            tabOpenLink('https://bts.co'+cp+'ng.net/browse/ADCH-'+((data+"").replace(/[^0-9]/g,"")) );
+            tabOpenLink('https://bts.co'+cp+'ng.net/browse/SADP-'+((data+"").replace(/[^0-9]/g,"")) );
         else
             tabOpenLink('https://bts.co'+cp+'ng.net/');
     }, 'url');
