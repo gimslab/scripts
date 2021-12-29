@@ -1,47 +1,48 @@
 settings.blacklistPattern=/^https?:\/\/(mail.google.com|docs.google.com|www.lucidchart.com|co...ng.*\.sharepoint\.com|bts.co...ng.net|metric.co...ng.net|app\.smartsheet\.com)/i;
 
+api.unmapAllExcept(['f','i','I','E','R','S','D','G','gg','v','q','ya','yy'], /^https?:\/\/calendar.google.com/i);
 
-
-unmap('e',/^https?:\/\/wiki.gimslab.com/i);
-unmap('e',/^https?:\/\/h.gimslab.com/i);
+api.unmap('e',/^https?:\/\/wiki.gimslab.com/i);
+api.unmap('e',/^https?:\/\/h.gimslab.com/i);
 
 var wikiCpNet=/^https?:\/\/wiki.co...ng.net/i;
-unmap('?',wikiCpNet);
-unmap('[',wikiCpNet);
-unmap('e',wikiCpNet);
-unmap('l',wikiCpNet); // label
+api.unmap('?',wikiCpNet);
+api.unmap('[',wikiCpNet);
+api.unmap('e',wikiCpNet);
+api.unmap('l',wikiCpNet); // label
 
 var youtubeCom=/^https?:\/\/youtube.com/i;
-unmap('?',youtubeCom);
-unmap('<',youtubeCom);
-unmap('>',youtubeCom);
-unmap('i',youtubeCom);
+api.unmap('?',youtubeCom);
+api.unmap('<',youtubeCom);
+api.unmap('>',youtubeCom);
+api.unmap('i',youtubeCom);
 
 var githubCom=/^https?:\/\/github.com/i;
-unmap('?',githubCom);
+api.unmap('?',githubCom);
+
+api.unmapAllExcept(['f','i','O','su','yt'], /^https?:\/\/outlook.office.com/i);
 
 var keepGoogleCom=/^https?:\/\/keep.google.com/i;
-unmap('?',keepGoogleCom);
-unmap('j',keepGoogleCom);
-unmap('k',keepGoogleCom);
+api.unmap('?',keepGoogleCom);
+api.unmap('j',keepGoogleCom);
+api.unmap('k',keepGoogleCom);
 
 
-iunmap(":"); // disable emoji
+api.iunmap(":"); // disable emoji
 // Hints.characters = 'acdfghijklmnopqrsuvwx'; // default is 'asdfgqwertzxcvb'
 
-addSearchAlias('s', 'stackoverflow', 'http://stackoverflow.com/search?q='); // ss to search stackoverflow
-addSearchAliasX('s', 'stackoverflow', 'http://stackoverflow.com/search?q=', 'o'); // os to search stackoverflow
+api.addSearchAlias('s', 'stackoverflow', 'http://stackoverflow.com/search?q='); // ss to search stackoverflow
 
-aceVimMap(',,', '<Esc>', 'insert');
+api.aceVimMap(',,', '<Esc>', 'insert');
 
-mapkey('<Ctrl-y>', 'Show me the money', function() {
+api.mapkey('<Ctrl-y>', 'Show me the money', function() {
     Front.showPopup('HI~');
 });
 
 var arr=[117,112,97];
 var cp="";for(var i in arr) cp += String.fromCharCode(arr[i]);
 
-mapkey('sj', 'open jira(BTS) in a new tab', function(){
+api.mapkey('sj', 'open jira(BTS) in a new tab', function(){
     Front.showEditor('', function(data) {
         if(data)
             tabOpenLink('https://bts.co'+cp+'ng.net/browse/SADP-'+((data+"").replace(/[^0-9]/g,"")) );
@@ -51,7 +52,7 @@ mapkey('sj', 'open jira(BTS) in a new tab', function(){
 });
 
 // override default
-mapkey('sw', 'open wiki.cp in a new tab', function(){
+api.mapkey('sw', 'open wiki.cp in a new tab', function(){
     Front.showEditor('', function(data) {
         if(data)
             tabOpenLink('https://wiki.co'+cp+'ng.net/dosearchsite.action?cql=siteSearch+~+%22'+data+'%22+and+space.type+%3D+%22favourite%22&queryString='+data);
@@ -60,7 +61,7 @@ mapkey('sw', 'open wiki.cp in a new tab', function(){
     }, 'url');
 });
 
-mapkey('sr', 'open recon.cp in a new tab', function(){
+api.mapkey('sr', 'open recon.cp in a new tab', function(){
     Front.showEditor('', function(data) {
         if(data)
             tabOpenLink('https://finance.co'+cp+'ng.net/goods/recon?orderId='+data);
@@ -68,4 +69,5 @@ mapkey('sr', 'open recon.cp in a new tab', function(){
             tabOpenLink('https://finance.co'+cp+'ng.net/goods/recon?orderId=00000');
     }, 'url');
 });
+
 
