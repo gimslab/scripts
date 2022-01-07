@@ -45,9 +45,9 @@ var cp="";for(var i in arr) cp += String.fromCharCode(arr[i]);
 api.mapkey('sj', 'open jira(BTS) in a new tab', function(){
     api.Front.showEditor('', function(data) {
         if(data)
-            tabOpenLink('https://bts.co'+cp+'ng.net/browse/SADP-'+((data+"").replace(/[^0-9]/g,"")) );
+            api.tabOpenLink('https://bts.co'+cp+'ng.net/browse/SADP-'+((data+"").replace(/[^0-9]/g,"")) );
         else
-            tabOpenLink('https://bts.co'+cp+'ng.net/');
+            api.tabOpenLink('https://bts.co'+cp+'ng.net/');
     }, 'url');
 });
 
@@ -55,18 +55,18 @@ api.mapkey('sj', 'open jira(BTS) in a new tab', function(){
 api.mapkey('sw', 'open wiki.cp in a new tab', function(){
     api.Front.showEditor('', function(data) {
         if(data)
-            tabOpenLink('https://wiki.co'+cp+'ng.net/dosearchsite.action?cql=siteSearch+~+%22'+data+'%22+and+space.type+%3D+%22favourite%22&queryString='+data);
+            api.tabOpenLink('https://wiki.co'+cp+'ng.net/dosearchsite.action?cql=siteSearch+~+%22'+data+'%22+and+space.type+%3D+%22favourite%22&queryString='+data);
         else
-            tabOpenLink('https://wiki.co'+cp+'ng.net/dosearchsite.action?queryString=&where=conf_favorites&type=&lastModified=&contributor=&contributorUsername=');
+            api.tabOpenLink('https://wiki.co'+cp+'ng.net/dosearchsite.action?queryString=&where=conf_favorites&type=&lastModified=&contributor=&contributorUsername=');
     }, 'url');
 });
 
 api.mapkey('sr', 'open recon.cp in a new tab', function(){
     api.Front.showEditor('', function(data) {
         if(data)
-            tabOpenLink('https://finance.co'+cp+'ng.net/goods/recon?orderId='+data);
+            api.tabOpenLink('https://finance.co'+cp+'ng.net/goods/recon?orderId='+data);
         else
-            tabOpenLink('https://finance.co'+cp+'ng.net/goods/recon?orderId=00000');
+            api.tabOpenLink('https://finance.co'+cp+'ng.net/goods/recon?orderId=00000');
     }, 'url');
 });
 
