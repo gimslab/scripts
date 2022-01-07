@@ -36,14 +36,14 @@ api.addSearchAlias('s', 'stackoverflow', 'http://stackoverflow.com/search?q='); 
 api.aceVimMap(',,', '<Esc>', 'insert');
 
 api.mapkey('<Ctrl-y>', 'Show me the money', function() {
-    Front.showPopup('HI~');
+    api.Front.showPopup('HI~');
 });
 
 var arr=[117,112,97];
 var cp="";for(var i in arr) cp += String.fromCharCode(arr[i]);
 
 api.mapkey('sj', 'open jira(BTS) in a new tab', function(){
-    Front.showEditor('', function(data) {
+    api.Front.showEditor('', function(data) {
         if(data)
             tabOpenLink('https://bts.co'+cp+'ng.net/browse/SADP-'+((data+"").replace(/[^0-9]/g,"")) );
         else
@@ -53,7 +53,7 @@ api.mapkey('sj', 'open jira(BTS) in a new tab', function(){
 
 // override default
 api.mapkey('sw', 'open wiki.cp in a new tab', function(){
-    Front.showEditor('', function(data) {
+    api.Front.showEditor('', function(data) {
         if(data)
             tabOpenLink('https://wiki.co'+cp+'ng.net/dosearchsite.action?cql=siteSearch+~+%22'+data+'%22+and+space.type+%3D+%22favourite%22&queryString='+data);
         else
@@ -62,7 +62,7 @@ api.mapkey('sw', 'open wiki.cp in a new tab', function(){
 });
 
 api.mapkey('sr', 'open recon.cp in a new tab', function(){
-    Front.showEditor('', function(data) {
+    api.Front.showEditor('', function(data) {
         if(data)
             tabOpenLink('https://finance.co'+cp+'ng.net/goods/recon?orderId='+data);
         else
