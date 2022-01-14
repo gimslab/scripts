@@ -1,6 +1,7 @@
-settings.blacklistPattern=/^https?:\/\/(mail.google.com|docs.google.com|www.lucidchart.com|co...ng.*\.sharepoint\.com|bts.co...ng.net|metric.co...ng.net|app\.smartsheet\.com)/i;
+settings.blacklistPattern=/^https?:\/\/(mail.google.com|docs.google.com|www.lucidchart.com|co...ng.*\.sharepoint\.com|metric.co...ng.net|app\.smartsheet\.com)/i;
 
 api.unmapAllExcept(['f','i','I','E','R','S','D','G','gg','v','q','ya','yy'], /^https?:\/\/calendar.google.com/i);
+api.unmapAllExcept(['S','x'], /\/bts.co...ng.net\//i);
 
 api.unmap('e',/^https?:\/\/wiki.gimslab.com/i);
 api.unmap('e',/^https?:\/\/h.gimslab.com/i);
