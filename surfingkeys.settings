@@ -11,6 +11,7 @@ api.unmap('?',wikiCpNet);
 api.unmap('[',wikiCpNet);
 api.unmap('e',wikiCpNet);
 api.unmap('l',wikiCpNet); // label
+api.unmap('c',wikiCpNet); // create
 
 var youtubeCom=/^https?:\/\/youtube.com/i;
 api.unmap('?',youtubeCom);
