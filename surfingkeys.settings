@@ -32,6 +32,7 @@ api.unmap('k',keepGoogleCom);
 var gerrit=/^https?:\/\/gerrit.co...ng.net/i;
 api.unmap('?', gerrit);
 api.unmap('c', gerrit);
+api.unmap('g', gerrit);
 
 api.iunmap(":"); // disable emoji
 // Hints.characters = 'acdfghijklmnopqrsuvwx'; // default is 'asdfgqwertzxcvb'
