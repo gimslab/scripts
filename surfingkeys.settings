@@ -1,4 +1,4 @@
-settings.blacklistPattern=/^https?:\/\/(calendar.google.com|colab.research.google.com|mail.google.com|docs.google.com|www.lucidchart.com|co...ng.*\.sharepoint\.com|metric.co...ng.net|app\.smartsheet\.com)/i;
+settings.blacklistPattern=/^https?:\/\/(keep.google.com|calendar.google.com|colab.research.google.com|mail.google.com|docs.google.com|www.lucidchart.com|co...ng.*\.sharepoint\.com|metric.co...ng.net|app\.smartsheet\.com)/i;
 
 api.unmapAllExcept(['S','x','f','E','R'], /\/bts.co...ng.net\//i);
 
@@ -22,11 +22,6 @@ var githubCom=/^https?:\/\/github.com/i;
 api.unmap('?',githubCom);
 
 api.unmapAllExcept(['f','i','O','su','yt'], /^https?:\/\/outlook.office.com/i);
-
-var keepGoogleCom=/^https?:\/\/keep.google.com/i;
-api.unmap('?',keepGoogleCom);
-api.unmap('j',keepGoogleCom);
-api.unmap('k',keepGoogleCom);
 
 var gerrit=/^https?:\/\/gerrit.co...ng.net/i;
 api.unmap('?', gerrit);
