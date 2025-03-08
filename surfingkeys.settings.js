@@ -3,60 +3,51 @@
 // settings.blocklistPattern = /((calendar|mail).google|trello|duolingo|youtube|udemy).com/i
 // settings.blocklistPattern = /((calendar|mail|keep)\.google|trello|duolingo)\.com/i
 
-
 /////////////
 // unmap
+//api.unmapAllExcept(['S','x','f','E','R'], /\/bts.co...ng.net\//i);
+//
+//
+//api.unmap('e',/^https?:\/\/wiki.gimslab.com/i);
+//api.unmap('e',/^https?:\/\/h.gimslab.com/i);
+//
+//
+//var wikiCpNet=/^https?:\/\/wiki.co...ng.net/i;
+//api.unmap('?',wikiCpNet);
+//api.unmap('[',wikiCpNet);
+//api.unmap('e',wikiCpNet);
+//api.unmap('l',wikiCpNet); // label
+//api.unmap('c',wikiCpNet); // create
+//
+//
+//var youtubeCom=/^https?:\/\/(www\.)?youtube.com/i;
+//api.unmap('?',youtubeCom);
+//api.unmap('<',youtubeCom);
+//api.unmap('>',youtubeCom);
+//api.unmap('i',youtubeCom);
+//
+//
+//var githubCom=/^https?:\/\/github.com/i;
+//api.unmap('?',githubCom);
+//
+//
+//api.unmapAllExcept(['f','i','O','su','yt'], /^https?:\/\/outlook.office.com/i);
+//
+//
+//var gerrit=/^https?:\/\/gerrit.co...ng.net/i;
+//api.unmap('?', gerrit);
+//api.unmap('c', gerrit);
 
-api.unmapAllExcept(['S','x','f','E','R'], /\/bts.co...ng.net\//i);
-
-api.unmap('e',/^https?:\/\/wiki.gimslab.com/i);
-api.unmap('e',/^https?:\/\/h.gimslab.com/i);
-
-var wikiCpNet=/^https?:\/\/wiki.co...ng.net/i;
-api.unmap('?',wikiCpNet);
-api.unmap('[',wikiCpNet);
-api.unmap('e',wikiCpNet);
-api.unmap('l',wikiCpNet); // label
-api.unmap('c',wikiCpNet); // create
-
-var youtubeCom=/^https?:\/\/(www\.)?youtube.com/i;
-api.unmap('?',youtubeCom);
-api.unmap('<',youtubeCom);
-api.unmap('>',youtubeCom);
-api.unmap('i',youtubeCom);
-
-var githubCom=/^https?:\/\/github.com/i;
-api.unmap('?',githubCom);
-
-api.unmapAllExcept(['f','i','O','su','yt'], /^https?:\/\/outlook.office.com/i);
-
-var gerrit=/^https?:\/\/gerrit.co...ng.net/i;
-api.unmap('?', gerrit);
-api.unmap('c', gerrit);
 
 
 
 
-
-
-/*
-// an example to create a new mapping `ctrl-y`
-api.mapkey('<ctrl-y>', 'Show me the money', function() {
-    Front.showPopup('a well-known phrase uttered by characters in the 1996 film Jerry Maguire (Escape to close).');
-});
-
-// an example to replace `T` with `gt`, click `Default mappings` to see how `T` works.
-api.map('gt', 'T');
-
-// an example to remove mapkey `Ctrl-i`
-api.unmap('<ctrl-i>');
-*/
 
 // set theme
 settings.theme = `
 .sk_theme {
     font-family: Input Sans Condensed, Charcoal, sans-serif;
-    font-size: 3pt;
+    font-size: 10pt;
     background: #24272e;
     color: #abb2bf;
 }
