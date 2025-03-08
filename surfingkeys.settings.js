@@ -1,5 +1,5 @@
 // not work now 20240919, you can check symptoms like errors in dev console while pressing alt-s, 1.17.0
-settings.blacklistPattern=/^https?:\/\/(keep.google.com|calendar.google.com|colab.research.google.com|mail.google.com|docs.google.com|www.lucidchart.com|lucid.app|co...ng.*\.sharepoint\.com|metric.co...ng.net|app\.smartsheet\.com)/i;
+// settings.blacklistPattern=/^https?:\/\/(keep.google.com|calendar.google.com|colab.research.google.com|mail.google.com|docs.google.com|www.lucidchart.com|lucid.app|co...ng.*\.sharepoint\.com|metric.co...ng.net|app\.smartsheet\.com)/i;
 // settings.blocklistPattern = /((calendar|mail).google|trello|duolingo|youtube|udemy).com/i
 // settings.blocklistPattern = /((calendar|mail|keep)\.google|trello|duolingo)\.com/i
 
