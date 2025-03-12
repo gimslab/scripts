@@ -10,16 +10,16 @@
 //
 //api.unmap('e',/^https?:\/\/wiki.gimslab.com/i);
 //api.unmap('e',/^https?:\/\/h.gimslab.com/i);
-//
-//
-//var wikiCpNet=/^https?:\/\/wiki.co...ng.net/i;
-//api.unmap('?',wikiCpNet);
-//api.unmap('[',wikiCpNet);
-//api.unmap('e',wikiCpNet);
-//api.unmap('l',wikiCpNet); // label
-//api.unmap('c',wikiCpNet); // create
-//
-//
+
+
+var wikiCpNet=/^https?:\/\/wiki.co...ng.net/i;
+api.unmap('?',wikiCpNet);
+api.unmap('[',wikiCpNet);
+api.unmap('e',wikiCpNet);
+api.unmap('l',wikiCpNet); // label
+api.unmap('c',wikiCpNet); // create
+
+
 //var youtubeCom=/^https?:\/\/(www\.)?youtube.com/i;
 //api.unmap('?',youtubeCom);
 //api.unmap('<',youtubeCom);
