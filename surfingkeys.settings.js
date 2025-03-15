@@ -6,10 +6,10 @@
 /////////////
 // unmap
 //api.unmapAllExcept(['S','x','f','E','R'], /\/bts.co...ng.net\//i);
-//
-//
-//api.unmap('e',/^https?:\/\/wiki.gimslab.com/i);
-//api.unmap('e',/^https?:\/\/h.gimslab.com/i);
+
+
+api.unmap('e',/^https?:\/\/wiki.gimslab.com/i);
+api.unmap('e',/^https?:\/\/h.gimslab.com/i);
 
 
 var wikiCpNet=/^https?:\/\/wiki.co...ng.net/i;
