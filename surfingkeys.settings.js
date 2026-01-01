@@ -1,13 +1,11 @@
-// not work now 20240919, you can check symptoms like errors in dev console while pressing alt-s, 1.17.0
-// settings.blacklistPattern=/^https?:\/\/(keep.google.com|calendar.google.com|colab.research.google.com|mail.google.com|docs.google.com|www.lucidchart.com|lucid.app|co...ng.*\.sharepoint\.com|metric.co...ng.net|app\.smartsheet\.com)/i;
-// settings.blocklistPattern = /((calendar|mail).google|trello|duolingo|youtube|udemy).com/i
-// settings.blocklistPattern = /((calendar|mail|keep)\.google|trello|duolingo)\.com/i
-
 /////////////
 // unmap
 //api.unmapAllExcept(['S','x','f','E','R'], /\/bts.co...ng.net\//i);
 
-api.unmap('a',/.*/i);
+// 입력창(Insert Mode)에서 다음 기능을 해제합니다.
+api.iunmap('<Ctrl-a>');
+api.iunmap('<Ctrl-e>');
+api.iunmap('<Ctrl-u>');
 
 api.unmap('e',/^https?:\/\/wiki.gimslab.com/i);
 api.unmap('e',/^https?:\/\/h.gimslab.com/i);
