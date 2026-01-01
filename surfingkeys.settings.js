@@ -7,6 +7,7 @@
 // unmap
 //api.unmapAllExcept(['S','x','f','E','R'], /\/bts.co...ng.net\//i);
 
+api.unmap('a',/.*/i);
 
 api.unmap('e',/^https?:\/\/wiki.gimslab.com/i);
 api.unmap('e',/^https?:\/\/h.gimslab.com/i);
