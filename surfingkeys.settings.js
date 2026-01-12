@@ -1,3 +1,7 @@
+// block sharepoint.com
+settings.blocklistPattern = /sharepoint\.com\/i;
+
+
 /////////////
 // unmap
 //api.unmapAllExcept(['S','x','f','E','R'], /\/bts.co...ng.net\//i);
