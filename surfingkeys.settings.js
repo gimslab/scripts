@@ -1,5 +1,5 @@
 // block sharepoint.com
-settings.blocklistPattern = /sharepoint\.com\/i;
+settings.blocklistPattern = /(sharepoint\.com\/|TEST\.COM\/)/i;
 
 
 /////////////
