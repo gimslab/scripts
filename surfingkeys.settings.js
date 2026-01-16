@@ -21,6 +21,8 @@ api.unmap('[',wikiCpNet);
 api.unmap('e',wikiCpNet);
 api.unmap('l',wikiCpNet); // label
 api.unmap('c',wikiCpNet); // create
+api.unmap('n',wikiCpNet); // next line comment
+api.unmap('p',wikiCpNet); // previous inline comment
 
 
 //var youtubeCom=/^https?:\/\/(www\.)?youtube.com/i;
